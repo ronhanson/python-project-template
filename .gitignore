@@ -61,7 +61,7 @@ venv
 # IDE settings #
 ####################
 .settings
-#.idea
+.idea
 
 # SSL Keys #
 ############

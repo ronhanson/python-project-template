@@ -33,11 +33,11 @@ Type the following command to initialize your development environment :
     
     fab dev
     
-This will initialize a virtual environment, git sync, and install your python requirements.
+This will initialize a virtual environment, and install your python requirements.
 
 ## HOW TO PACKAGE YOUR PROJECT
 
-See HOWTO.md file to see how to package your project in egg or deb.
+See [HOWTO.md](HOWTO.md) file to see how to package your project in egg or deb.
 
 ## A NOTE ON PYTHON REQUIREMENTS
 

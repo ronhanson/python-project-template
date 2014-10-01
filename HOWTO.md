@@ -1,5 +1,5 @@
 % Date: 2014-09-30  
-% Title: PACKAGE USAGE  
+% Title: PACKAGE INSTALLATION AND USAGE  
 % Author: Ronan Delacroix
 
 # PACKAGE INSTALLATION AND USAGE
@@ -39,7 +39,6 @@ Create a virtual env, and setup the dev mode :
 
     fab dev
 
-
 ### IV. PYTHON PACKAGING / EGG BUILD
 
 You can create a Python egg simply by doing :
@@ -64,3 +63,28 @@ Or if you are already on a Debian system:
     ./build_deb.sh
 
 
+##### Bonus tip for PyCharm users
+
+If you use PyCharm, you paste the following code:
+
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <toolSet name="Fabric">
+      <tool name="Fab Dev" description="Fabric Initialize Development Mode" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="true" showConsoleOnStdErr="true" synchronizeAfterRun="true">
+        <exec>
+          <option name="COMMAND" value="/usr/local/bin/fab" />
+          <option name="PARAMETERS" value="dev" />
+          <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+        </exec>
+      </tool>
+    </toolSet>
+
+Into your PyCharm config folder. That is to say :
+
+ - For MacOSX : *~/Library/Preferences/PyCharm30/tools/Fabric.xml* 
+
+ - For Linux : *~/.PyCharmXX/config/tools/Fabric.xml* 
+
+That will add a Fabric external tools to pyCharm.
+You will then be able to go to "Tools" / "Fabric" / "Fab Dev" to initialize your env, for any project you create with that template.
+You can also add you fab lines.
