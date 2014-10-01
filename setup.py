@@ -15,7 +15,7 @@ setup(
     scripts=[],
     license=open('LICENCE.txt').read().strip(),
     description='MYPROJECT DESCRIPTION',
-    long_description=open('README.txt').read().strip(),
+    long_description=open('DESCRIPTION.txt').read().strip(),
     include_package_data=True,
     install_requires=[r.strip() if ('git+' not in r) else re.sub(r".*egg=(.*)", "", r).strip() for r in open('requirements.txt').readlines()],
     classifiers=[
@@ -26,7 +26,6 @@ setup(
         'Intended Audience :: System Administrators',
         'License :: Proprietary',
         'Operating System :: MacOS :: MacOS X',
-        'Operating System :: Microsoft :: Windows',
         'Operating System :: POSIX',
         'Programming Language :: Python',
     ],
