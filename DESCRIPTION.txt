@@ -1,0 +1,15 @@
+MYPROJECT
+=========
+
+Author
+------
+    Ronan Delacroix <ronan.delacroix@gmail.com>.
+
+Goal
+----
+    <INSERT TEXT ABOUT GOAL OF THE APP>
+
+Usage
+-----
+    <INSERT TEXT ON HOW TO USE THE APP>
+ 

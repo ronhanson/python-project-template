@@ -29,9 +29,6 @@ def update():
 def dev():
     """Setting up Development mode."""
     print(yellow("# Setting up development environment...\n", True))
-    with hide('output'):
-        git.pull('origin', 'master')
-        git.pull('origin', 'dev')
     virtualenv.init()
     virtualenv.update()
     print(green("\n# DONE.", True))
