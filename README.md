@@ -8,14 +8,14 @@ This project is useful for creating Python Eggs, and Debian packages (.deb) for 
 *Should be compatible with Python >=2.7 and >= 3.4.*
 
 
-## HOW TO INIT YOUR PROJECT
+## How to initialize you project
 
 1. Copy all files in the python bootstrap folder to your new repo (except maybe this md file).
 2. Replace MYPROJECT by your project name in setup.py.
 3. Rename the MYPROJECT folder and use this as your base application module.
 4. Rename the bin/MYPROJECT script and use this as an executable if necessary.
 
-## HOW TO USE THIS PROJECT AS A TEMPLATE
+## How to use this project as a template
 
 If you don't fancy copying all the files to your repo, you can use these commands to create your project on github :
 
@@ -25,7 +25,7 @@ If you don't fancy copying all the files to your repo, you can use these command
 
 You need [Hub](https://github.com/github/hub) installed for that.
 
-## HOW TO DEVELOP YOUR PROJECT
+## How to develop your project
 
 Type the following command to initialize your development environment :
 
@@ -35,11 +35,11 @@ Type the following command to initialize your development environment :
     
 This will initialize a virtual environment, and install your python requirements.
 
-## HOW TO PACKAGE YOUR PROJECT
+## How to package your project
 
 See [HOWTO.md](HOWTO.md) file to see how to package your project in egg or deb.
 
-## A NOTE ON PYTHON REQUIREMENTS
+## A note on Python requirements
 
 In order to be able to use your own sub projects, python libraries, ..., you can use the requirement file with pip/git combo.
 Adding this line to your requirements.txt file will add a git repo as a requirement :
@@ -52,11 +52,16 @@ Note the "#egg=toolbox" part. This sets the name of the package you are installi
 This also allows softwares like PyCharm not to yell at you telling you a requirement is missing.
 When packaging, this requirement will be changed for "toolbox" only.
 
-## BUGS
+## Known Bugs
 
  - This project will not work if python3 is not installed.
 
-## TODOS
+## Todo
 
  - Python2 only compat.
  - Git hook for version bump.
+ 
+## Author & Licence
+
+Copyright (c) 2014 Ronan Delacroix
+This program is released under [MIT Licence](LICENSE.txt).

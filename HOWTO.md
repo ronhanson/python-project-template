@@ -1,11 +1,7 @@
-% Date: 2014-09-30  
-% Title: PACKAGE INSTALLATION AND USAGE  
-% Author: Ronan Delacroix
-
-# PACKAGE INSTALLATION AND USAGE
+# Package Installation and Usage
 
 
-### I. PYTHON INSTALLATION INSTRUCTIONS FOR LINUX
+### I. Python installation instructions for Linux 
 
 1. First install Python (2.7 or 3.4), pip and python-setuptools. Depending on your system it is something like :
 
@@ -20,7 +16,7 @@
 		export PYTHONPATH="$PYTHONPATH:."
 		
 
-### II. PACKAGE INSTALLATION
+### II. Package Installation
 
 Install current packages and its dependencies :
 
@@ -29,7 +25,7 @@ Install current packages and its dependencies :
 You should now be able to launch the scripts installed with your package.
 
 
-### III. DEVELOP
+### III. Develop
 
 Install Fabric globally :
 
@@ -39,14 +35,14 @@ Create a virtual env, and setup the dev mode :
 
     fab dev
 
-### IV. PYTHON PACKAGING / EGG BUILD
+### IV. Python Packaging / Egg Build
 
 You can create a Python egg simply by doing :
 
     python setup.py sdist
 
 
-### V. DEBIAN PACKAGING / .DEB BUILD
+### V. Debian Packaging / .Deb Build
 
 If you want to create a .deb, first, check the debian.cfg file and add the dependencies you want.
 
