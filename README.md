@@ -3,6 +3,7 @@ Python Project Template
 
 This project aims to provide a template for new python project.
 Goal is to keep a good file structure, that allows for easy packaging and building.
+
 This project is useful for creating Python Eggs, and Debian packages (.deb) for both Python 2 and 3.
 
 *Should be compatible with Python >=2.7 and >= 3.4.*
@@ -42,13 +43,16 @@ See [HOWTO.md](HOWTO.md) file to see how to package your project in egg or deb.
 ## A note on Python requirements
 
 In order to be able to use your own sub projects, python libraries, ..., you can use the requirement file with pip/git combo.
+
 Adding this line to your requirements.txt file will add a git repo as a requirement :
 
     -e git+git@github.com:ronhanson/python-toolbox.git#egg=toolbox
 
 This will clone the git repo into the "libs/" folder. And it will also add this path into your virtualenv PYTHONPATH.
+
 This is pip editable mode. It is very useful to include projects of your own or not packaged ones.
 Note the "#egg=toolbox" part. This sets the name of the package you are installing.
+
 This also allows softwares like PyCharm not to yell at you telling you a requirement is missing.
 When packaging, this requirement will be changed for "toolbox" only.
 
@@ -64,4 +68,5 @@ When packaging, this requirement will be changed for "toolbox" only.
 ## Author & Licence
 
 Copyright (c) 2014 Ronan Delacroix
+
 This program is released under [MIT Licence](LICENCE.txt).
