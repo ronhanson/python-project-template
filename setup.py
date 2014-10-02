@@ -9,7 +9,7 @@ setup(
     name='MYPROJECT',
     version=open('VERSION.txt').read().strip(),
     author='Ronan Delacroix',
-    author_email='ronan.delacroix@h-t-solutions.com',
+    author_email='ronan.delacroix@gmail.com',
     packages=find_packages(where='.', exclude=["*.tests", "*.tests.*", "tests.*", "tests"]),
     package_data={}, #{'mypkg': ['data/*.dat']},
     scripts=[],

@@ -1,1 +1,1 @@
--e git+git@devserver.highlands.local:/lib-python-toolbox#egg=toolbox
+-e git+git@github.com:ronhanson/python-toolbox.git#egg=toolbox
