@@ -64,4 +64,4 @@ When packaging, this requirement will be changed for "toolbox" only.
 ## Author & Licence
 
 Copyright (c) 2014 Ronan Delacroix
-This program is released under [MIT Licence](LICENSE.txt).
+This program is released under [MIT Licence](LICENCE.txt).
