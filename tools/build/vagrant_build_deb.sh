@@ -26,8 +26,11 @@ vagrant provision
 vagrant ssh -c "cd /vagrant/tools/build && ./build_deb.sh"
 confirm "Process finished. Do you want to close the build VM?" && vagrant halt -f
 
+cd ../..
+confirm "Do you want to clean folder of temp files (dist, deb_dist, egg-info)?" && rm -Rf dist deb_dist *.egg-info
+
 echo ""
 echo "=>"
-ls ../../*.deb
+ls build/*.deb
 echo ""
 echo "Done."

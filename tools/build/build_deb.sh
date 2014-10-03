@@ -3,7 +3,8 @@ cd ../..
 echo "Packaging Python .tar.gz package."
 echo ""
 python3 setup.py sdist #--dist-dir /tmp/python-dist
-cp debian.cfg *.egg-info/stdeb.cfg
+cp debian.cfg stdeb.cfg
+mv stdeb.cfg *.egg-info/
 echo ""
 echo "Python package complete. Packaging .DEB now..."
 echo ""
@@ -12,10 +13,10 @@ python3 setup.py --command-packages=stdeb.command sdist_dsc --with-python2=True 
 echo ""
 echo ".DEB creation completed"
 echo ""
-mkdir ./builds
-mv `ls deb_dist/*.deb` ./builds/
-echo "   .deb moved into current folder : "
-ls *.deb
+[ -d build ] || mkdir build
+mv `ls deb_dist/*.deb` ./build/
+echo "   .deb moved into 'build' folder : "
+ls build/*.deb
 echo ""
 cd tools/build/
-./clean_deb.sh
+source ./clean_deb.sh
