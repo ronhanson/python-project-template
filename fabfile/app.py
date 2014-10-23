@@ -1,8 +1,6 @@
 from fabric.decorators import task
-from fabric.context_managers import settings
 from fabric.colors import cyan, red
 from fabric.api import local
-from fabric.utils import abort
 
 
 @task

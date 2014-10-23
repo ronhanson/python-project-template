@@ -1,4 +1,5 @@
 #!/bin/bash
+
 cd ../..
 echo "Packaging Python .tar.gz package."
 echo ""
