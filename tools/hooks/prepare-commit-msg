@@ -31,6 +31,9 @@ def main(commit_message_filepath):
         lines = f.readlines()
         commit_message = lines[-1]
 
+    commit_parts = commit_message.split(' -- ')
+    commit_message = "%s (%s)" % (commit_parts[2], commit_parts[1])
+
     content = ''
     if os.path.isfile(commit_message_filepath):
         with open(commit_message_filepath, 'r') as f:

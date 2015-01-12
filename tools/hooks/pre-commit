@@ -142,7 +142,7 @@ def main():
         print('')
 
     commit_message = "v%s - %s" % (new_version, m)
-    long_commit_message = "v%s, %s -- %s" % (new_version, date.today().strftime('%Y-%m-%d'), m)
+    long_commit_message = "%s -- v%s -- %s" % (date.today().strftime('%Y-%m-%d'), new_version, m)
     print("Final commit message :")
     print(commit_message)
 
